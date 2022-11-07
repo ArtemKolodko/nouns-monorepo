@@ -25,7 +25,7 @@ const config: HardhatUserConfig = {
   networks: {
     mainnet: {
       url: "https://a.api.s0.t.hmny.io",
-      accounts: [`0x${process.env.WALLET_PRIVATE_KEY!}`].filter(Boolean),
+      accounts: [process.env.WALLET_PRIVATE_KEY!].filter(Boolean),
     },
     rinkeby: {
       url: `https://rinkeby.infura.io/v3/${process.env.INFURA_PROJECT_ID}`,
