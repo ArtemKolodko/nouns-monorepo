@@ -84,7 +84,7 @@ const supportedChainURLs = {
   [ChainId.Rinkeby]: createNetworkHttpUrl('rinkeby'),
   [ChainId.Hardhat]: 'http://localhost:8545',
   [ChainId.Goerli]: createNetworkHttpUrl('goerli'),
-  [1666600000]: createNetworkHttpUrl('harmony'),
+  1666600000: createNetworkHttpUrl('harmony'),
 };
 
 // prettier-ignore

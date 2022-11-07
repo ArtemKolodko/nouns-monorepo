@@ -80,7 +80,7 @@ const app: Record<SupportedChains, AppConfig> = {
     subgraphApiUri: 'http://localhost:8000/subgraphs/name/nounsdao/nouns-subgraph',
     enableHistory: process.env.REACT_APP_ENABLE_HISTORY === 'true',
   },
-  [1666600000]: {
+  1666600000: {
     jsonRpcUri: createNetworkHttpUrl('harmony'),
     wsRpcUri: createNetworkWsUrl('harmony'),
     subgraphApiUri: process.env.REACT_APP_SUBGRAPH_API_URL || '',
