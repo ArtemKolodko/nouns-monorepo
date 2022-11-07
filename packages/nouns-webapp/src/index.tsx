@@ -84,18 +84,18 @@ const supportedChainURLs = {
   [ChainId.Rinkeby]: createNetworkHttpUrl('rinkeby'),
   [ChainId.Hardhat]: 'http://localhost:8545',
   [ChainId.Goerli]: createNetworkHttpUrl('goerli'),
-  [1666600000]: createNetworkHttpUrl('harmony'),
+  1666600000: createNetworkHttpUrl('harmony'),
 };
 
 // prettier-ignore
 const useDappConfig = {
   readOnlyChainId: CHAIN_ID,
   readOnlyUrls: {
-    //[CHAIN_ID]: supportedChainURLs[CHAIN_ID],
-    [CHAIN_ID]: new StaticJsonRpcProvider({
-      url: supportedChainURLs[CHAIN_ID],
-      headers: { 'Content-Type': 'application/json; charset=utf-8' }
-    })
+    [CHAIN_ID]: supportedChainURLs[CHAIN_ID],
+    // [CHAIN_ID]: new StaticJsonRpcProvider({
+    //   url: supportedChainURLs[CHAIN_ID],
+    //   headers: { 'Content-Type': 'application/json; charset=utf-8' }
+    // })
   },
   multicallAddresses: {
     [ChainId.Hardhat]: multicallOnLocalhost,
