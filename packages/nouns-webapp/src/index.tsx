@@ -158,7 +158,6 @@ const ChainSubscriber: React.FC = () => {
       dispatch(setAuctionExtended({ nounId, endTime }));
     };
     const processAuctionSettled = (nounId: BigNumberish, winner: string, amount: BigNumberish) => {
-      console.log('processAuctionSettled', nounId, winner, amount)
       dispatch(setAuctionSettled({ nounId, amount, winner }));
     };
 
@@ -169,6 +168,7 @@ const ChainSubscriber: React.FC = () => {
 
     // Fetch the previous 24hours of  bids
     const previousBids = await nounsAuctionHouseContract.queryFilter(bidFilter, 0 - BLOCKS_PER_DAY);
+    console.log('previousBids', previousBids)
     for (let event of previousBids) {
       if (event.args === undefined) return;
       processBidFilter(...(event.args as [BigNumber, string, BigNumber, boolean]), event);
