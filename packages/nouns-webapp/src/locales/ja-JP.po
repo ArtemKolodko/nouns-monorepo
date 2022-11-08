@@ -247,8 +247,8 @@ msgid "Change"
 msgstr "代理人を変更する"
 
 #: src/components/WalletConnectModal/index.tsx
-msgid "Clear WalletConnect Data"
-msgstr "WalletConnect データを消去"
+#~ msgid "Clear WalletConnect Data"
+#~ msgstr "WalletConnect データを消去"
 
 #: src/components/ChangeDelegatePannel/index.tsx
 #: src/components/ChangeDelegatePannel/index.tsx
@@ -354,8 +354,8 @@ msgid "Disconnect"
 msgstr "切断する"
 
 #: src/components/Footer/index.tsx
-msgid "Discord"
-msgstr "Discord"
+#~ msgid "Discord"
+#~ msgstr "Discord"
 
 #: src/components/NavBar/index.tsx
 msgid "Discourse"
@@ -505,8 +505,8 @@ msgid "Held by"
 msgstr "主催者"
 
 #: src/components/AuctionActivity/index.tsx
-msgid "Help mint the next Noun"
-msgstr "次にミントされるNounの投票をしてください"
+#~ msgid "Help mint the next Noun"
+#~ msgstr "次にミントされるNounの投票をしてください"
 
 #: src/components/profileEvent/event/DesktopTransferEvent/index.tsx
 msgid "Holder changed from <0><1/></0> to <2><3/></2>"
@@ -703,7 +703,7 @@ msgid "Playground"
 msgstr "遊び場"
 
 #: src/components/Bid/index.tsx
-msgid "Please place a bid higher than or equal to the minimum bid amount of {0} ETH"
+msgid "Please place a bid higher than or equal to the minimum bid amount of {0} ONE"
 msgstr "最低入札額の {0} ETHと同じかそれ以上の入札額を設定してください"
 
 #: src/components/Bid/index.tsx
@@ -1051,8 +1051,8 @@ msgid "View on Etherscan"
 msgstr "イーサスキャンで見る"
 
 #: src/components/Bid/index.tsx
-msgid "Vote for the next Noun"
-msgstr "次のNounに投票する"
+#~ msgid "Vote for the next Noun"
+#~ msgstr "次のNounに投票する"
 
 #: src/components/VoteModal/index.tsx
 msgid "Vote on Prop {0}"

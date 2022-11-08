@@ -242,8 +242,8 @@ msgid "Change"
 msgstr "Change"
 
 #: src/components/WalletConnectModal/index.tsx
-msgid "Clear WalletConnect Data"
-msgstr "Clear WalletConnect Data"
+#~ msgid "Clear WalletConnect Data"
+#~ msgstr "Clear WalletConnect Data"
 
 #: src/components/ChangeDelegatePannel/index.tsx
 #: src/components/ChangeDelegatePannel/index.tsx
@@ -349,8 +349,8 @@ msgid "Disconnect"
 msgstr "Disconnect"
 
 #: src/components/Footer/index.tsx
-msgid "Discord"
-msgstr "Discord"
+#~ msgid "Discord"
+#~ msgstr "Discord"
 
 #: src/components/NavBar/index.tsx
 msgid "Discourse"
@@ -500,8 +500,8 @@ msgid "Held by"
 msgstr "Held by"
 
 #: src/components/AuctionActivity/index.tsx
-msgid "Help mint the next Noun"
-msgstr "Help mint the next Noun"
+#~ msgid "Help mint the next Noun"
+#~ msgstr "Help mint the next Noun"
 
 #: src/components/profileEvent/event/DesktopTransferEvent/index.tsx
 msgid "Holder changed from <0><1/></0> to <2><3/></2>"
@@ -698,8 +698,8 @@ msgid "Playground"
 msgstr "Playground"
 
 #: src/components/Bid/index.tsx
-msgid "Please place a bid higher than or equal to the minimum bid amount of {0} ETH"
-msgstr "Please place a bid higher than or equal to the minimum bid amount of {0} ETH"
+msgid "Please place a bid higher than or equal to the minimum bid amount of {0} ONE"
+msgstr "Please place a bid higher than or equal to the minimum bid amount of {0} ONE"
 
 #: src/components/Bid/index.tsx
 #: src/components/Bid/index.tsx
@@ -1046,8 +1046,8 @@ msgid "View on Etherscan"
 msgstr "View on Etherscan"
 
 #: src/components/Bid/index.tsx
-msgid "Vote for the next Noun"
-msgstr "Vote for the next Noun"
+#~ msgid "Vote for the next Noun"
+#~ msgstr "Vote for the next Noun"
 
 #: src/components/VoteModal/index.tsx
 msgid "Vote on Prop {0}"

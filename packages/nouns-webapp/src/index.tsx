@@ -112,7 +112,7 @@ const Updaters = () => {
   );
 };
 
-const BLOCKS_PER_DAY = 1000;
+const BLOCKS_PER_DAY = 43200; // (60 * 60 * 24 / 2 seconds for block)
 
 const ChainSubscriber: React.FC = () => {
   const dispatch = useAppDispatch();
@@ -161,14 +161,32 @@ const ChainSubscriber: React.FC = () => {
       dispatch(setAuctionSettled({ nounId, amount, winner }));
     };
 
+    const getPreviosBidsForLastDay = async () => {
+      try {
+        const maxBlocksRangePerRequest = 1000
+        const promises = []
+        for (let i = 0; i < BLOCKS_PER_DAY; i += maxBlocksRangePerRequest) {
+          const from = -i - maxBlocksRangePerRequest
+          const to = i === 0 ? 'latest' : -i
+          // console.log('i', i, 'from', from, 'to', to)
+          promises.push(nounsAuctionHouseContract.queryFilter(bidFilter, from, to))
+        }
+        const rows = await Promise.all(promises)
+        return rows.flat().filter(item => item)
+      } catch (e) {
+        console.error('Cannot get bids for last day:', e)
+      }
+      return []
+    }
+
     // Fetch the current auction
     const currentAuction = await nounsAuctionHouseContract.auction();
     dispatch(setFullAuction(reduxSafeAuction(currentAuction)));
     dispatch(setLastAuctionNounId(currentAuction.nounId.toNumber()));
 
     // Fetch the previous 24hours of  bids
-    const previousBids = await nounsAuctionHouseContract.queryFilter(bidFilter, 0 - BLOCKS_PER_DAY);
-    console.log('previousBids', previousBids)
+    // const previousBids = await nounsAuctionHouseContract.queryFilter(bidFilter, 0 - 1000);
+    const previousBids = await getPreviosBidsForLastDay()
     for (let event of previousBids) {
       if (event.args === undefined) return;
       processBidFilter(...(event.args as [BigNumber, string, BigNumber, boolean]), event);
