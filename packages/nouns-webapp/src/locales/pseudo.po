@@ -406,8 +406,8 @@ msgstr ""
 
 #: src/components/Footer/index.tsx
 #: src/components/NounInfoCard/index.tsx
-msgid "Etherscan"
-msgstr ""
+#~ msgid "Etherscan"
+#~ msgstr ""
 
 #: src/pages/Vote/index.tsx
 msgid "Execute"
@@ -431,6 +431,10 @@ msgstr ""
 
 #: src/pages/Playground/index.tsx
 msgid "Explore"
+msgstr ""
+
+#: src/components/Footer/index.tsx
+msgid "Explorer"
 msgstr ""
 
 #: src/components/Banner/index.tsx
@@ -1042,7 +1046,21 @@ msgstr ""
 #: src/components/profileEvent/event/DesktopProposalVoteEvent/index.tsx
 #: src/components/profileEvent/event/DesktopTransferEvent/index.tsx
 #: src/components/profileEvent/event/DesktopTransferEvent/index.tsx
-msgid "View on Etherscan"
+#~ msgid "View on Etherscan"
+#~ msgstr ""
+
+#: src/components/ChangeDelegatePannel/index.tsx
+#: src/components/Holder/index.tsx
+#: src/components/NounInfoRowHolder/index.tsx
+#: src/components/Winner/index.tsx
+#: src/components/profileEvent/event/DesktopDelegationEvent/index.tsx
+#: src/components/profileEvent/event/DesktopDelegationEvent/index.tsx
+#: src/components/profileEvent/event/DesktopNounWinEvent/index.tsx
+#: src/components/profileEvent/event/DesktopNounWinEvent/index.tsx
+#: src/components/profileEvent/event/DesktopProposalVoteEvent/index.tsx
+#: src/components/profileEvent/event/DesktopTransferEvent/index.tsx
+#: src/components/profileEvent/event/DesktopTransferEvent/index.tsx
+msgid "View on Explorer"
 msgstr ""
 
 #: src/components/Bid/index.tsx

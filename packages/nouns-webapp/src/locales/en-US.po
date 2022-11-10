@@ -406,8 +406,8 @@ msgstr "Error fetching Noun birthday"
 
 #: src/components/Footer/index.tsx
 #: src/components/NounInfoCard/index.tsx
-msgid "Etherscan"
-msgstr "Etherscan"
+#~ msgid "Etherscan"
+#~ msgstr "Etherscan"
 
 #: src/pages/Vote/index.tsx
 msgid "Execute"
@@ -432,6 +432,10 @@ msgstr "Expires {0}"
 #: src/pages/Playground/index.tsx
 msgid "Explore"
 msgstr "Explore"
+
+#: src/components/Footer/index.tsx
+msgid "Explorer"
+msgstr "Explorer"
 
 #: src/components/Banner/index.tsx
 msgid "FOREVER."
@@ -1042,8 +1046,22 @@ msgstr "View all bids"
 #: src/components/profileEvent/event/DesktopProposalVoteEvent/index.tsx
 #: src/components/profileEvent/event/DesktopTransferEvent/index.tsx
 #: src/components/profileEvent/event/DesktopTransferEvent/index.tsx
-msgid "View on Etherscan"
-msgstr "View on Etherscan"
+#~ msgid "View on Etherscan"
+#~ msgstr "View on Etherscan"
+
+#: src/components/ChangeDelegatePannel/index.tsx
+#: src/components/Holder/index.tsx
+#: src/components/NounInfoRowHolder/index.tsx
+#: src/components/Winner/index.tsx
+#: src/components/profileEvent/event/DesktopDelegationEvent/index.tsx
+#: src/components/profileEvent/event/DesktopDelegationEvent/index.tsx
+#: src/components/profileEvent/event/DesktopNounWinEvent/index.tsx
+#: src/components/profileEvent/event/DesktopNounWinEvent/index.tsx
+#: src/components/profileEvent/event/DesktopProposalVoteEvent/index.tsx
+#: src/components/profileEvent/event/DesktopTransferEvent/index.tsx
+#: src/components/profileEvent/event/DesktopTransferEvent/index.tsx
+msgid "View on Explorer"
+msgstr "View on Explorer"
 
 #: src/components/Bid/index.tsx
 #~ msgid "Vote for the next Noun"

@@ -31,14 +31,14 @@ const DesktopNounWinEvent: React.FC<DesktopNounWinEventProps> = props => {
             effect={'solid'}
             className={classes.delegateHover}
             getContent={dataTip => {
-              return <Trans>View on Etherscan</Trans>;
+              return <Trans>View on Explorer</Trans>;
             }}
           />
           {isNounderNoun ? (
             <Trans>
               <span className={classes.bold}> Noun {event.nounId} </span> sent to{' '}
               <span
-                data-tip={`View on Etherscan`}
+                data-tip={`View on Explorer`}
                 onClick={() => window.open(buildEtherscanAddressLink(event.winner), '_blank')}
                 data-for="view-on-etherscan-tooltip"
                 className={classes.address}
@@ -51,7 +51,7 @@ const DesktopNounWinEvent: React.FC<DesktopNounWinEventProps> = props => {
             <Trans>
               <span className={classes.bold}> Noun {event.nounId} </span> won by{' '}
               <span
-                data-tip={`View on Etherscan`}
+                data-tip={`View on Explorer`}
                 onClick={() => window.open(buildEtherscanAddressLink(event.winner), '_blank')}
                 data-for="view-on-etherscan-tooltip"
                 className={classes.address}
@@ -70,12 +70,12 @@ const DesktopNounWinEvent: React.FC<DesktopNounWinEventProps> = props => {
             effect={'solid'}
             className={classes.delegateHover}
             getContent={dataTip => {
-              return <Trans>View on Etherscan</Trans>;
+              return <Trans>View on Explorer</Trans>;
             }}
           />
           <div
             onClick={() => window.open(buildEtherscanTxLink(event.transactionHash), '_blank')}
-            data-tip={`View on Etherscan`}
+            data-tip={`View on Explorer`}
             data-for="view-on-etherscan-txn-tooltip"
           >
             <TransactionHashPill transactionHash={event.transactionHash} />

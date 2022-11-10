@@ -46,9 +46,9 @@ const NounInfoRowHolder: React.FC<NounInfoRowHolderProps> = props => {
 
   return (
     <Tooltip
-      tip="View on Etherscan"
+      tip="View on Explorer"
       tooltipContent={(tip: string) => {
-        return <Trans>View on Etherscan</Trans>;
+        return <Trans>View on Explorer</Trans>;
       }}
       id="holder-etherscan-tooltip"
     >

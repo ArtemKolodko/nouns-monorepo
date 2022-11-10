@@ -7,6 +7,8 @@ const networkName = () => {
       return 'Ethereum Mainnet';
     case 4:
       return 'the Rinkeby network';
+    case 1666600000:
+      return 'Harmony Mainnet'
     default:
       return `Network ${CHAIN_ID}`;
   }
@@ -18,6 +20,8 @@ const metamaskNetworkName = () => {
       return 'Ethereum Mainnet';
     case 4:
       return 'Rinkeby Test Network';
+    case 1666600000:
+      return 'Harmony Mainnet'
     default:
       return `Network ${CHAIN_ID}`;
   }
