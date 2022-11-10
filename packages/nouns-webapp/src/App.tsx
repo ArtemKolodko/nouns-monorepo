@@ -28,6 +28,7 @@ function App() {
   const { account, chainId, library } = useEthers();
   const dispatch = useAppDispatch();
   dayjs.extend(relativeTime);
+  const libraryChainId = library && library._network ? library._network.chainId : null
 
   useEffect(() => {
     // Local account array updated
@@ -38,7 +39,7 @@ function App() {
 
   return (
     <div className={`${classes.wrapper}`}>
-      {Number(CHAIN_ID) !== chainId && <NetworkAlert />}
+      {Number(CHAIN_ID) !== (libraryChainId || chainId) && <NetworkAlert />}
       {alertModal.show && (
         <AlertModal
           title={alertModal.title}

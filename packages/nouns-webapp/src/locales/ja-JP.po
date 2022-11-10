@@ -411,8 +411,8 @@ msgstr "Nounの誕生日を取得できませんでした"
 
 #: src/components/Footer/index.tsx
 #: src/components/NounInfoCard/index.tsx
-msgid "Etherscan"
-msgstr "Etherscan"
+#~ msgid "Etherscan"
+#~ msgstr "Etherscan"
 
 #: src/pages/Vote/index.tsx
 msgid "Execute"
@@ -437,6 +437,10 @@ msgstr "残り {0} で期限切れになります"
 #: src/pages/Playground/index.tsx
 msgid "Explore"
 msgstr "探索"
+
+#: src/components/Footer/index.tsx
+msgid "Explorer"
+msgstr ""
 
 #: src/components/Banner/index.tsx
 msgid "FOREVER."
@@ -1047,8 +1051,22 @@ msgstr "すべての入札を表示"
 #: src/components/profileEvent/event/DesktopProposalVoteEvent/index.tsx
 #: src/components/profileEvent/event/DesktopTransferEvent/index.tsx
 #: src/components/profileEvent/event/DesktopTransferEvent/index.tsx
-msgid "View on Etherscan"
-msgstr "イーサスキャンで見る"
+#~ msgid "View on Etherscan"
+#~ msgstr "イーサスキャンで見る"
+
+#: src/components/ChangeDelegatePannel/index.tsx
+#: src/components/Holder/index.tsx
+#: src/components/NounInfoRowHolder/index.tsx
+#: src/components/Winner/index.tsx
+#: src/components/profileEvent/event/DesktopDelegationEvent/index.tsx
+#: src/components/profileEvent/event/DesktopDelegationEvent/index.tsx
+#: src/components/profileEvent/event/DesktopNounWinEvent/index.tsx
+#: src/components/profileEvent/event/DesktopNounWinEvent/index.tsx
+#: src/components/profileEvent/event/DesktopProposalVoteEvent/index.tsx
+#: src/components/profileEvent/event/DesktopTransferEvent/index.tsx
+#: src/components/profileEvent/event/DesktopTransferEvent/index.tsx
+msgid "View on Explorer"
+msgstr ""
 
 #: src/components/Bid/index.tsx
 #~ msgid "Vote for the next Noun"
