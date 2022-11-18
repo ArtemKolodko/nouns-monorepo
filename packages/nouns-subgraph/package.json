@@ -23,7 +23,7 @@
     "test": "graph test",
     "create:localnode": "graph create --node http://localhost:8020/",
     "deploy": "graph deploy --debug --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/",
-    "deploy:shard1": "graph deploy --debug --node http://localhost:8030/ --ipfs http://localhost:5001/ harmony/nouns-shard1",
+    "deploy:shard1": "graph deploy --debug --node http://localhost:8020/ --ipfs http://localhost:5001/ ethereum/nouns-shard1",
     "deploy:localnode": "graph deploy --debug --node http://localhost:8020/ --ipfs http://localhost:5001/",
     "deploy:hardhat": "yarn clean && yarn prepare:hardhat && yarn codegen && yarn create:localnode nounsdao/nouns-subgraph && yarn deploy:localnode nounsdao/nouns-subgraph",
     "deploy:rinkeby": "yarn clean && yarn prepare:rinkeby && yarn codegen && yarn deploy nounsdao/nouns-subgraph-rinkeby",
