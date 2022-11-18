@@ -60,7 +60,7 @@ const NavBar = () => {
             <Navbar.Brand as={Link} to="/" className={classes.navBarBrand}>
               <img src={logo} className={classes.navBarLogo} alt="Nouns DAO logo" />
             </Navbar.Brand>
-            {Number(CHAIN_ID) !== 1666600000 && (
+            {![1666600000, 1666600001].includes(Number(CHAIN_ID)) && (
               <Nav.Item>
                 <img className={classes.testnetImg} src={testnetNoun} alt="testnet noun" />
                 TESTNET

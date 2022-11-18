@@ -39,7 +39,7 @@ function App() {
 
   return (
     <div className={`${classes.wrapper}`}>
-      {Number(CHAIN_ID) !== (libraryChainId || chainId) && <NetworkAlert />}
+      {chainId && Number(CHAIN_ID) !== (libraryChainId || chainId) && <NetworkAlert />}
       {alertModal.show && (
         <AlertModal
           title={alertModal.title}
