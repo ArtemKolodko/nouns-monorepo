@@ -1,0 +1,15 @@
+{
+  "network": "harmony",
+  "nounsToken": {
+    "address": "0x6deab730C6B8667671D7d17301253b96c0EAB495",
+    "startBlock": 36818467
+  },
+  "nounsAuctionHouse": {
+    "address": "0x50fF18567bDa7538cF84D3770d4aDE9971f45710",
+    "startBlock": 36818481
+  },
+  "nounsDAO": {
+    "address": "0x0122C35CcEf7b99ad5eaf6d6b58CA9358775dB5b",
+    "startBlock": 36818494
+  }
+}
