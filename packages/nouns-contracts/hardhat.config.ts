@@ -27,6 +27,10 @@ const config: HardhatUserConfig = {
       url: "https://a.api.s0.t.hmny.io",
       accounts: [process.env.WALLET_PRIVATE_KEY!].filter(Boolean),
     },
+    mainnet_shard1: {
+      url: "https://s1.api.harmony.one",
+      accounts: [process.env.WALLET_PRIVATE_KEY!].filter(Boolean),
+    },
     rinkeby: {
       url: `https://rinkeby.infura.io/v3/${process.env.INFURA_PROJECT_ID}`,
       accounts: process.env.MNEMONIC

@@ -8,7 +8,9 @@ const networkName = () => {
     case 4:
       return 'the Rinkeby network';
     case 1666600000:
-      return 'Harmony Mainnet'
+      return 'Harmony Mainnet shard0'
+    case 1666600001:
+      return 'Harmony Mainnet shard1'
     default:
       return `Network ${CHAIN_ID}`;
   }
@@ -21,7 +23,9 @@ const metamaskNetworkName = () => {
     case 4:
       return 'Rinkeby Test Network';
     case 1666600000:
-      return 'Harmony Mainnet'
+      return 'Harmony Mainnet shard0'
+    case 1666600001:
+      return 'Harmony Mainnet shard1'
     default:
       return `Network ${CHAIN_ID}`;
   }
