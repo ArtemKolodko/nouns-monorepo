@@ -1,5 +1,5 @@
 {
-  "network": "ethereum",
+  "network": "mainnet",
   "nounsToken": {
     "address": "0x6deab730C6B8667671D7d17301253b96c0EAB495",
     "startBlock": 36818467
