@@ -10,6 +10,12 @@
   REACT_APP_HARMONY_JSONRPC = "https://a.api.s0.t.hmny.io"
   REACT_APP_HARMONY_WSRPC = "wss://ws.s0.t.hmny.io/"
 
+[context."shard1".environment]
+REACT_APP_CHAIN_ID = "1666600001"
+REACT_APP_ENABLE_HISTORY = "true"
+REACT_APP_HARMONY_JSONRPC = "https://s1.api.harmony.one"
+REACT_APP_HARMONY_WSRPC = "wss://ws.s1.t.hmny.io/"
+
 [context.deploy-preview.environment]
   REACT_APP_CHAIN_ID = "1666600000"
   REACT_APP_ENABLE_HISTORY = "true"
